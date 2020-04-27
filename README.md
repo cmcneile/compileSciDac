@@ -10,7 +10,7 @@ Chroma
 Scripts
 --------
 
-Below is a script to compile the libraries in SCALAR mode.
-scripts/compile_scidac.sh
+The script scripts/compile_scidac.sh is used
+to compile the libraries in SCALAR mode.
 
 It probably doesn't use the optimal set of parameters.
