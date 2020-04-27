@@ -1,0 +1,12 @@
+*~
+*.log
+*.aux
+*.out
+*.pdf
+*.toc
+/src/*.aux
+*.nav
+*.snm
+.DS_Store
+*.vrb
+readme_git
