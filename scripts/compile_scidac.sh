@@ -39,7 +39,7 @@ cd ..
 qla_compile ()
 {
 cd  qla
- ./configure  CXX=mpiCC CC=mpicc --prefix=$QLA_I --enable-nc=3 CFLAGS="-O2 " 
+ ./configure  CXX=${CXX} CC=${CC} --prefix=$QLA_I --enable-nc=3 CFLAGS="-O2 " 
 make
 make install
 cd ..
@@ -49,7 +49,7 @@ cd ..
 qdp_compile ()
 {
 cd qdp
-./configure CXX=mpiCC CC=mpicc --prefix=$QDP_I --with-qmp=$QMP_I --enable-nc=3  --with-qla=$QLA_I --with-qio=$QIO_I CFLAGS="-O2 "
+./configure CXX=${CXX} CC=${CC} --prefix=$QDP_I --with-qmp=$QMP_I --enable-nc=3  --with-qla=$QLA_I --with-qio=$QIO_I CFLAGS="-O2 "
 make
 make install
 cd ..
@@ -59,7 +59,7 @@ cd ..
 ql3_compile ()
 {
 cd qopqdp
-./configure CXX=mpiCC CC=mpicc --prefix=$QL3_I --with-qdp=$QDP_I  --with-qmp=$QMP_I --enable-nc=3  --with-qla=$QLA_I --with-qio=$QIO_I CFLAGS="-O2 "
+./configure CXX=${CXX} CC=${CC} --prefix=$QL3_I --with-qdp=$QDP_I  --with-qmp=$QMP_I --enable-nc=3  --with-qla=$QLA_I --with-qio=$QIO_I CFLAGS="-O2 "
 make
 make install
 cd ..
